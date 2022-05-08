@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="titulo">Código secreto</h1>
+
+    <main class="main">
+        <section class="form box">
+            <form>
+
+                <label for="input-texto">Solo letras minúsculas, sin acento</label>
+                <input class="text-input" type="text" name="input-texto" id="input-phrase"
+                    placeholder="Ingrese el texto aqui">
+                <input class="btn" type="submit" value="encriptar!" id="btn-encriptar" onclick="encryptText(event)">
+                <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar"
+                    onclick="decryptText(event)">
+
+            </form>
+        </section>
+
+        <section class="msg box">
+            <h2 id="">Mensaje:</h2>
+            <input class="text-input" type="text" id="output-phrase"></input>
+            <input class="btn" type="submit" value="copiar" id="btn-copy" onclick="copyText()">
+        </section>
+    </main>
+    <footer>
+        Challenge Oracle - Alura <br>Copyright © 2022 Jesus Eduardo Tejerina<br>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
